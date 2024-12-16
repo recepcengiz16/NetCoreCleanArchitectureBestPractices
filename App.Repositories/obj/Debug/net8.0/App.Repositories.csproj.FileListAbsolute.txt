@@ -1,0 +1,15 @@
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/bin/Debug/net8.0/App.Repositories.deps.json
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/bin/Debug/net8.0/App.Repositories.runtimeconfig.json
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/bin/Debug/net8.0/App.Repositories.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/bin/Debug/net8.0/App.Repositories.pdb
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/Debug/net8.0/App.Repositories.csproj.AssemblyReference.cache
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/Debug/net8.0/App.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/Debug/net8.0/App.Repositories.AssemblyInfoInputs.cache
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/Debug/net8.0/App.Repositories.AssemblyInfo.cs
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/Debug/net8.0/App.Repositories.csproj.CoreCompileInputs.cache
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/Debug/net8.0/App.Repositories.sourcelink.json
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/Debug/net8.0/App.Repositories.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/Debug/net8.0/refint/App.Repositories.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/Debug/net8.0/App.Repositories.pdb
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/Debug/net8.0/App.Repositories.genruntimeconfig.cache
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/Debug/net8.0/ref/App.Repositories.dll
