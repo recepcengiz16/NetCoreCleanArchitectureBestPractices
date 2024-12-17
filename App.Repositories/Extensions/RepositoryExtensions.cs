@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Repositories.Products;
 
 namespace Repositories.Extensions;
 
@@ -25,6 +26,14 @@ public static class RepositoryExtensions
             }); // connectionString! bu da Bu atamanın güvenli olduğunu garanti ediyorum compilera,  buraya bir şey gelecek manasında asında.
             // Compilerı rahatlatıyoruz aslında
         });
+        services.AddScoped<IProductRepository, ProductRepository>(); // context de scoped olduğu için scoped olarak kullanırız ef coreda
+        services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>)); // burada neden type of kullandık çünkü generic repositoryde
+                                                                                       // belirli bir tip yok. O yüzden biz de
+                                                                                       // typeof(IGenericRepository<>), typeof(GenericRepository<> şeklinde
+                                                                                       // kullanmalıyız. Eğer birden fazla tip alsaydı içine virgül koyacaktık
+                                                                                       // içine. Diyelim IGenericRepository<T,K> gibiyse biz de burada
+                                                                                       // IGenericRepository<,> şeklinde yazacaktık. Yukarıda kaç tane virgül
+                                                                                       // varsa biz de o kadar koyuyoruz.  
         return services; // hani . deyip başka metotları da ekliyorduk ya zincir şekilnde o yüzden IServiceCollection döndük.
     }
 }

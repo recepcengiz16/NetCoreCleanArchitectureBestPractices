@@ -1,5 +1,6 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
+using Repositories.Products;
 
 namespace Repositories;
 
