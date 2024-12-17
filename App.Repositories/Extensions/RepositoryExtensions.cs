@@ -33,7 +33,9 @@ public static class RepositoryExtensions
                                                                                        // kullanmalıyız. Eğer birden fazla tip alsaydı içine virgül koyacaktık
                                                                                        // içine. Diyelim IGenericRepository<T,K> gibiyse biz de burada
                                                                                        // IGenericRepository<,> şeklinde yazacaktık. Yukarıda kaç tane virgül
-                                                                                       // varsa biz de o kadar koyuyoruz.  
+                                                                                       // varsa biz de o kadar koyuyoruz. 
+        
+        services.AddScoped<IUnitOfWork,UnitOfWork>();
         return services; // hani . deyip başka metotları da ekliyorduk ya zincir şekilnde o yüzden IServiceCollection döndük.
     }
 }

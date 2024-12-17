@@ -1,5 +1,6 @@
 
 using Repositories.Extensions;
+using Services.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddRepositories(builder.Configuration);
+builder.Services.AddRepositories(builder.Configuration).AddServices(builder.Configuration);
 
 var app = builder.Build();
 
