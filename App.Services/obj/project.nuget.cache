@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "pNtri8uXb3drIM/10O5q9dSACeyDtWQLk8Qe/FI1Ijc4RrSoO9e28gzwTSA30eA1Q1/aqAFsQdK5Qvce8o6xSg==",
+  "dgSpecHash": "UvN6tZaV4MX9N/hBFRFVlFQRH+RGGJ14gyJC6EDODOKAv2SiF0ydOqDhu3rCPmziUCdLb2OVUaD1p4xL9go/iA==",
   "success": true,
   "projectFilePath": "/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Services/App.Services.csproj",
   "expectedPackageFiles": [
     "/home/oem/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/oem/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
+    "/home/oem/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
+    "/home/oem/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.data.sqlclient/5.1.6/microsoft.data.sqlclient.5.1.6.nupkg.sha512",

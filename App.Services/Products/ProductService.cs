@@ -68,9 +68,9 @@ public class ProductService(IProductRepository productRepository, IUnitOfWork un
         // Bu nedenle, SaveChangesAsync çağrısından sonra, product.ProductId dolu bir değer döner.
     }
 
-    public async Task<ServiceResult> UpdateAsync(int ProductId, UpdateProductRequest request)
+    public async Task<ServiceResult> UpdateAsync(int productId, UpdateProductRequest request)
     {
-        var product = await productRepository.GetByIdAsync(ProductId);
+        var product = await productRepository.GetByIdAsync(productId);
         // Guard clauses: Önce bir gardını al. Tüm olumsuz durumları if ile kontrol et else ler olmasın
         if (product is null) // Fast fail: İlk başta olumsuz durumları kontrol edip döndüğümüz yöntem
         {
@@ -85,9 +85,9 @@ public class ProductService(IProductRepository productRepository, IUnitOfWork un
         return ServiceResult.Success(HttpStatusCode.NoContent); // güncellemede bir şey dönmüyoruz
     }
 
-    public async Task<ServiceResult> DeleteAsync(int ProductId)
+    public async Task<ServiceResult> DeleteAsync(int productId)
     {
-        var product = await productRepository.GetByIdAsync(ProductId);
+        var product = await productRepository.GetByIdAsync(productId);
         if (product is null)
         {
             return ServiceResult.Fail("Product not found",HttpStatusCode.NotFound);
@@ -96,4 +96,17 @@ public class ProductService(IProductRepository productRepository, IUnitOfWork un
         await unitOfWork.SaveChangesAsync();
         return ServiceResult.Success(HttpStatusCode.NoContent);
     }
+
+    public async Task<ServiceResult> UpdateStockAsync(UpdateProductStockRequest request)
+    {
+        var product = await productRepository.GetByIdAsync(request.ProductId);
+        if (product is null)
+        {
+            return ServiceResult.Fail("Product not found",HttpStatusCode.NotFound);
+        }
+        product.Stock = request.Quantity;
+        productRepository.Update(product);
+        await unitOfWork.SaveChangesAsync();
+        return ServiceResult.Success(HttpStatusCode.NoContent);
+    }  
 }

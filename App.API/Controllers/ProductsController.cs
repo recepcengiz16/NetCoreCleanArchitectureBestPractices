@@ -15,10 +15,10 @@ namespace App.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll() => CreateActionResult(await productService.GetAllAsync());
         
-        [HttpGet("{pageNumber}/{pageSize}")]
+        [HttpGet("{pageNumber:int}/{pageSize:int}")] // int diyerek route constraint yaptık yani gelecek olan değer int olmalı dedik
         public async Task<IActionResult> GetPagedAll(int pageNumber, int pageSize) => CreateActionResult(await productService.GetPagedAllListAsync(pageNumber, pageSize));
         
-        [HttpGet("{productId}")]
+        [HttpGet("{productId:int}")]
         public async Task<IActionResult> GetById(int productId) => CreateActionResult(await productService.GetByIdAsync(productId));
         // {
         //     var serviceResult = await productService.GetByIdAsync(id);
@@ -41,10 +41,15 @@ namespace App.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateProductRequest createProductRequest) => CreateActionResult(await productService.CreateAsync(createProductRequest));
         
-        [HttpPut("{productId}")]
+        [HttpPut("{productId:int}")]
         public async Task<IActionResult> Update(int productId, UpdateProductRequest updateProductRequest) => CreateActionResult(await productService.UpdateAsync(productId, updateProductRequest));
         
-        [HttpDelete]
+        
+        [HttpPatch("Stock")]
+        public async Task<IActionResult> UpdateStock(UpdateProductStockRequest request) => CreateActionResult(await productService.UpdateStockAsync(request));
+        
+        
+        [HttpDelete("{productId:int}")]
         public async Task<IActionResult> Delete(int productId) => CreateActionResult(await productService.DeleteAsync(productId));
     }
 }
