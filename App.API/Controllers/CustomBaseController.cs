@@ -27,7 +27,7 @@ namespace App.API.Controllers
             };
         }
         
-        [NonAction] // end point olduğunu belirtmek için, yardımcı olsunlar diye yazdık ya bu metotları
+        [NonAction] // end point olmadığınu belirtmek için, yardımcı olsunlar diye yazdık ya bu metotları
         public IActionResult CreateActionResult(ServiceResult result)
         {
             if (result.Status == HttpStatusCode.NoContent)
