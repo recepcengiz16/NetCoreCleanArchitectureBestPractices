@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Repositories.Categories;
 using Repositories.Products;
 
 namespace Repositories.Extensions;
@@ -27,6 +28,7 @@ public static class RepositoryExtensions
             // Compilerı rahatlatıyoruz aslında
         });
         services.AddScoped<IProductRepository, ProductRepository>(); // context de scoped olduğu için scoped olarak kullanırız ef coreda
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
         services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>)); // burada neden type of kullandık çünkü generic repositoryde
                                                                                        // belirli bir tip yok. O yüzden biz de
                                                                                        // typeof(IGenericRepository<>), typeof(GenericRepository<> şeklinde

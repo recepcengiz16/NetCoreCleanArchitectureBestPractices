@@ -13,7 +13,6 @@
         "packagesPath": "/home/oem/.nuget/packages/",
         "outputPath": "/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/home/oem/.nuget/NuGet/NuGet.Config"
         ],
@@ -86,7 +85,6 @@
         "packagesPath": "/home/oem/.nuget/packages/",
         "outputPath": "/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Services/obj/",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/home/oem/.nuget/NuGet/NuGet.Config"
         ],
@@ -116,6 +114,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[11.3.0, )"

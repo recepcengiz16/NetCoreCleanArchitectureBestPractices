@@ -1,3 +1,5 @@
+using Repositories.Categories;
+
 namespace Repositories.Products;
 
 public class Product
@@ -8,4 +10,6 @@ public class Product
                                                  // Bu atamanın güvenli olduğunu garanti ediyorum buraya bir şey gelecek manasında asında
     public decimal Price { get; set; }
     public int Stock { get; set; }
+    public int CategoryId { get; set; }
+    public Category Category { get; set; } = default!; // Bir product ın illa ki bir kategorisi olmalı
 }

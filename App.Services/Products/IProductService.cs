@@ -1,6 +1,7 @@
-using Repositories.Products;
+using Services.Products.Update;
+using Services.Products.UpdateStock;
 
-namespace Services.Products;
+namespace Services.Products.Create;
 
 public interface IProductService
 {

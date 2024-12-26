@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fXSYzKuDpBM=",
+  "dgSpecHash": "nYAd7clNBi77uJo5E6QvbHrziAe14dMjX4k/fcFnWaictPNjbw2ePag4fR+OuDdSG9o97lNCvxC7+n+uFOEHuQ==",
   "success": true,
   "projectFilePath": "/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Services/App.Services.csproj",
   "expectedPackageFiles": [
+    "/home/oem/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/home/oem/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/oem/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
     "/home/oem/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",

@@ -25,6 +25,16 @@ builder.Services.AddRepositories(builder.Configuration).AddServices(builder.Conf
 
 var app = builder.Build();
 
+// .Net8 ile beraber IExceptionHandler interface i geldi ve bu interface i implement ederek bu handlerlar üzerinden yakalayabiliyoruz. Yani bu
+// interface ile illa da bir response dönmemize gerek yok. Hatayı ele alıp o hata yolculuğuna devam edebilir. Biz o arada mesela o hatayı ele aldık
+// sonra mail veya sms gönderebiliriz sonra daha sonra detaylı bir şekilde ele alabiliriz. Global hataları ele alan handler yazıcaz bir de özel mesela
+// kritik bir hata varsa da onu da başka bir handler ile ele alıcaz. Tasarımı böyle yaptık farz edelim.
+
+app.UseExceptionHandler(x =>
+{
+    // bir action yazman lazım boş bırakamazsın diyor.
+}); // bizim yazdığımız exceptionların çalışabilmesi için bu middleware de olması lazım, çünkü hataları yakalayan bu middleware
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

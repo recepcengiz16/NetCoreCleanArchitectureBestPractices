@@ -1,5 +1,6 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
+using Repositories.Categories;
 using Repositories.Products;
 
 namespace Repositories;
@@ -18,4 +19,5 @@ public class AppDbContext(DbContextOptions<AppDbContext> options): DbContext(opt
         }
 
         public DbSet<Product> Products { get; set; } = default!;
+        public DbSet<Category> Categories { get; set; } = default!;
 }

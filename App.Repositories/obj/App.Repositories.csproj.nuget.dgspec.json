@@ -13,7 +13,6 @@
         "packagesPath": "/home/oem/.nuget/packages/",
         "outputPath": "/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Repositories/obj/",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/home/oem/.nuget/NuGet/NuGet.Config"
         ],

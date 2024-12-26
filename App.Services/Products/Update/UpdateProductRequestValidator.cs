@@ -1,14 +1,15 @@
 using FluentValidation;
 
-namespace Services.Products;
+namespace Services.Products.Update;
 
-public class CreateProductRequestValidator: AbstractValidator<CreateProductRequest>
+public class UpdateProductRequestValidator: AbstractValidator<UpdateProductRequest>
 {
-    public CreateProductRequestValidator()
+    public UpdateProductRequestValidator()
     {
         RuleFor(x => x.Name)
             .NotEmpty().WithMessage("Ürün ismi gereklidir")
-            .Length(3,10).WithMessage("Ürün ismi 3 ile 10 karakter arasında olmalıdır");
+            .Length(3, 10).WithMessage("Ürün ismi 3 ile 10 karakter arasında olmalıdır");
+       
 
         RuleFor(x => x.Price)
             .GreaterThan(0).WithMessage("Ürün fiyatı 0'dan büyük olmalıdır");
