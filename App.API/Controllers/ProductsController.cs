@@ -1,6 +1,8 @@
 using System.Net;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Repositories.Products;
+using Services.Filters;
 using Services.Products;
 using Services.Products.Create;
 using Services.Products.Update;
@@ -21,8 +23,8 @@ namespace App.API.Controllers
         [HttpGet("{pageNumber:int}/{pageSize:int}")] // int diyerek route constraint yaptık yani gelecek olan değer int olmalı dedik
         public async Task<IActionResult> GetPagedAll(int pageNumber, int pageSize) => CreateActionResult(await productService.GetPagedAllListAsync(pageNumber, pageSize));
         
-        [HttpGet("{productId:int}")]
-        public async Task<IActionResult> GetById(int productId) => CreateActionResult(await productService.GetByIdAsync(productId));
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetById(int id) => CreateActionResult(await productService.GetByIdAsync(id));
         // {
         //     var serviceResult = await productService.GetByIdAsync(id);
         //     
@@ -44,15 +46,17 @@ namespace App.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateProductRequest createProductRequest) => CreateActionResult(await productService.CreateAsync(createProductRequest));
         
-        [HttpPut("{productId:int}")]
-        public async Task<IActionResult> Update(int productId, UpdateProductRequest updateProductRequest) => CreateActionResult(await productService.UpdateAsync(productId, updateProductRequest));
+        [ServiceFilter(typeof(NotFoundFilter<Product,int>))]
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Update(int id, UpdateProductRequest updateProductRequest) => CreateActionResult(await productService.UpdateAsync(id, updateProductRequest));
         
         
         [HttpPatch("Stock")]
         public async Task<IActionResult> UpdateStock(UpdateProductStockRequest request) => CreateActionResult(await productService.UpdateStockAsync(request));
         
         
-        [HttpDelete("{productId:int}")]
-        public async Task<IActionResult> Delete(int productId) => CreateActionResult(await productService.DeleteAsync(productId));
+        [ServiceFilter(typeof(NotFoundFilter<Product,int>))] // bu filterda constructorında parametre aldığı için böyle oluyor
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id) => CreateActionResult(await productService.DeleteAsync(id));
     }
 }

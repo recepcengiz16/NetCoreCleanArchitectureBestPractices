@@ -18,7 +18,7 @@ namespace App.API.Controllers
 
             if (result.Status == HttpStatusCode.Created)
             {
-                return Created(result.UrlAsCreated, result);
+                return Created(result.UrlAsCreated, result); // burada created dönünce headerına yazıyor url yi, bodysine de result ı yazıyor.
             }
             
             return new ObjectResult(result)

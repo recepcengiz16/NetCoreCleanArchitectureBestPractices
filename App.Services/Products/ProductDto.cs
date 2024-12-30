@@ -1,6 +1,6 @@
 namespace Services.Products;
 
-public record ProductDto(int ProductId,string Name, decimal Price,int Stock);
+public record ProductDto(int Id,string Name, decimal Price,int Stock,int CategoryId);
 
 // recordlar da arkada classlara dönüşüyor aslında arkada, classların özel hali gibi düşünebiliriz.
 // public record ProductDto

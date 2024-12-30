@@ -2,8 +2,12 @@ using System.Linq.Expressions;
 
 namespace Repositories;
 
-public interface IGenericRepository<T> where T : class
+public interface IGenericRepository<T,in TId> where T : class where TId : struct // in ile belirtince
+                                                                                 // Tür parametresi sadece metodlara giriş olarak kullanılıyorsa
+                                                                                 // (örneğin, metod parametresi olarak).
+                                                                                 // Bu parametreyi değiştirme veya dışarı aktarma (return) gereksinimi yoksa.
 {
+    Task<bool> AnyAsync(TId id);
     IQueryable<T> GetAll(); // Çünkü bu yaklaşımla where ya da order by manası veri tabanında yapılıp gelsin. Neden async yapadık ne zaman toList dersek
                             // o da servis katmanında
     IQueryable<T> Where(Expression<Func<T, bool>> expression);

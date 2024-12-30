@@ -67,7 +67,7 @@ public class ProductService(IProductRepository productRepository, IUnitOfWork un
         
         await productRepository.AddAsync(product);
         await unitOfWork.SaveChangesAsync();
-        return ServiceResult<CreateProductResponse>.SuccessAsCreated(new CreateProductResponse(product.ProductId), $"api/products/{product.ProductId}");
+        return ServiceResult<CreateProductResponse>.SuccessAsCreated(new CreateProductResponse(product.Id), $"api/products/{product.Id}");
         //productRepository.AddAsync(product) metodu, Product nesnesini takip edilen bir duruma (tracked state) ekler.
         //Ancak, bu noktada ProductId henüz atanmaz.
         // unitOfWork.SaveChangesAsync() çağrıldığında, Entity Framework değişiklikleri veritabanına yazar. Bu işlem sırasında:
@@ -78,15 +78,11 @@ public class ProductService(IProductRepository productRepository, IUnitOfWork un
 
     public async Task<ServiceResult> UpdateAsync(int productId, UpdateProductRequest request)
     {
-        var product = await productRepository.GetByIdAsync(productId);
+       
         
+        var isProductNameExist = await productRepository.Where(x=>x.Name==request.Name && x.Id!=productId).AnyAsync();
         // Guard clauses: Önce bir gardını al. Tüm olumsuz durumları if ile kontrol et else ler olmasın
-        if (product is null) // Fast fail: İlk başta olumsuz durumları kontrol edip döndüğümüz yöntem
-        {
-            return ServiceResult.Fail("Product not found",HttpStatusCode.NotFound);
-        }
-        
-        var isProductNameExist = await productRepository.Where(x=>x.Name==request.Name && x.ProductId!=product.ProductId).AnyAsync();
+        // Fast fail: İlk başta olumsuz durumları kontrol edip döndüğümüz yöntem
         if (isProductNameExist)
         {
             return ServiceResult.Fail("Ürün ismi veritabanında bulunmaktadır",HttpStatusCode.BadRequest);
@@ -96,8 +92,10 @@ public class ProductService(IProductRepository productRepository, IUnitOfWork un
         // product.Price = request.Price;
         // product.Stock = request.Stock;
         
-        product = mapper.Map(request, product); // bu şekilde de mapleme yapabiliriz. Burada da product nesnesi elimde olduğu için generic değil bu şekilde yaptım.
-        
+        //product = mapper.Map(request, product); // bu şekilde de mapleme yapabiliriz. Burada da product nesnesi elimde olduğu için generic
+        //değil bu şekilde yaptım.
+        var product = mapper.Map<Product>(request); 
+        product.Id = productId; // UpdateProductRequest sınıfında Id değeri olmadığı için bu propertyi maplemeyecek bu şekilde elle yazdık.
         productRepository.Update(product);
         await unitOfWork.SaveChangesAsync();
         return ServiceResult.Success(HttpStatusCode.NoContent); // güncellemede bir şey dönmüyoruz
@@ -106,11 +104,11 @@ public class ProductService(IProductRepository productRepository, IUnitOfWork un
     public async Task<ServiceResult> DeleteAsync(int productId)
     {
         var product = await productRepository.GetByIdAsync(productId);
-        if (product is null)
-        {
-            return ServiceResult.Fail("Product not found",HttpStatusCode.NotFound);
-        }
-        productRepository.Delete(product);
+        // if (product is null)
+        // {
+        //     return ServiceResult.Fail("Product not found",HttpStatusCode.NotFound);
+        // }
+        productRepository.Delete(product!);
         await unitOfWork.SaveChangesAsync();
         return ServiceResult.Success(HttpStatusCode.NoContent);
     }

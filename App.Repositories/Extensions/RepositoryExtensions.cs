@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Repositories.Categories;
+using Repositories.Interceptors;
 using Repositories.Products;
 
 namespace Repositories.Extensions;
@@ -26,14 +27,15 @@ public static class RepositoryExtensions
                                                                                             // bir tane class oluştrup bu dizinde onu verdik.
             }); // connectionString! bu da Bu atamanın güvenli olduğunu garanti ediyorum compilera,  buraya bir şey gelecek manasında asında.
             // Compilerı rahatlatıyoruz aslında
+            options.AddInterceptors(new AuditDbContextInterceptor()); // buraya da interceptorımızı yazdık.
         });
         services.AddScoped<IProductRepository, ProductRepository>(); // context de scoped olduğu için scoped olarak kullanırız ef coreda
         services.AddScoped<ICategoryRepository, CategoryRepository>();
-        services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>)); // burada neden type of kullandık çünkü generic repositoryde
+        services.AddScoped(typeof(IGenericRepository<,>), typeof(GenericRepository<,>)); // burada neden type of kullandık çünkü generic repositoryde
                                                                                        // belirli bir tip yok. O yüzden biz de
                                                                                        // typeof(IGenericRepository<>), typeof(GenericRepository<> şeklinde
-                                                                                       // kullanmalıyız. Eğer birden fazla tip alsaydı içine virgül koyacaktık
-                                                                                       // içine. Diyelim IGenericRepository<T,K> gibiyse biz de burada
+                                                                                       // kullanmalıyız. Birden fazla tip aldığında içine virgül koyacağız
+                                                                                       // Diyelim IGenericRepository<T,K> gibiyse biz de burada
                                                                                        // IGenericRepository<,> şeklinde yazacaktık. Yukarıda kaç tane virgül
                                                                                        // varsa biz de o kadar koyuyoruz. 
         

@@ -265,3 +265,7 @@
 /home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.API/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
 /home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.API/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Security.Cryptography.ProtectedData.dll
 /home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.API/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.API/bin/Debug/net8.0/AutoMapper.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.API/bin/Debug/net8.0/FluentValidation.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.API/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.API/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll

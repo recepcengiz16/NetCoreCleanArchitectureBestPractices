@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Repositories;
 
-public class GenericRepository<T>(AppDbContext dbContext) : IGenericRepository<T> where T : class
+public class GenericRepository<T,TId>(AppDbContext dbContext) : IGenericRepository<T,TId> where T : BaseEntity<TId> where TId : struct
 {
     protected readonly AppDbContext Context = dbContext; // miras alınan sınıflarda da kullanabilelim diye
     private readonly DbSet<T> _dbSet = dbContext.Set<T>();
+    
+    public Task<bool> AnyAsync(TId id) => _dbSet.AnyAsync(x => x.Id.Equals(id));
     
     public IQueryable<T> GetAll() => _dbSet.AsQueryable().AsNoTracking();
     
