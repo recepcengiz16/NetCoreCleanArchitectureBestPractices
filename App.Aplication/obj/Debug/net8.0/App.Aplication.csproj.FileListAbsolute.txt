@@ -1,0 +1,16 @@
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/bin/Debug/net8.0/App.Aplication.deps.json
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/bin/Debug/net8.0/App.Aplication.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/bin/Debug/net8.0/App.Aplication.pdb
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/bin/Debug/net8.0/App.Domain.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/bin/Debug/net8.0/App.Domain.pdb
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/obj/Debug/net8.0/App.Aplication.csproj.AssemblyReference.cache
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/obj/Debug/net8.0/App.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/obj/Debug/net8.0/App.Aplication.AssemblyInfoInputs.cache
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/obj/Debug/net8.0/App.Aplication.AssemblyInfo.cs
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/obj/Debug/net8.0/App.Aplication.csproj.CoreCompileInputs.cache
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/obj/Debug/net8.0/App.Aplication.sourcelink.json
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/obj/Debug/net8.0/App.Aplication.csproj.CopyComplete
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/obj/Debug/net8.0/App.Aplication.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/obj/Debug/net8.0/refint/App.Aplication.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/obj/Debug/net8.0/App.Aplication.pdb
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/obj/Debug/net8.0/ref/App.Aplication.dll

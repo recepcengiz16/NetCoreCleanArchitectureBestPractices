@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "bKgbG4OWwP39yWo45spg4Fij8JeCQZUPRBvNzG2xWuPzjFtpkH7pJFNxcE9hW+xAgcXJ0M8HuHZeNmoM3/fB/A==",
+  "success": true,
+  "projectFilePath": "/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Aplication/App.Aplication.csproj",
+  "expectedPackageFiles": [
+    "/home/oem/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/home/oem/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
+    "/home/oem/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

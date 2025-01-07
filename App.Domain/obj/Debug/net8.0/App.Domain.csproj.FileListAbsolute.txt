@@ -1,0 +1,12 @@
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Domain/bin/Debug/net8.0/App.Domain.deps.json
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Domain/bin/Debug/net8.0/App.Domain.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Domain/bin/Debug/net8.0/App.Domain.pdb
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Domain/obj/Debug/net8.0/App.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Domain/obj/Debug/net8.0/App.Domain.AssemblyInfoInputs.cache
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Domain/obj/Debug/net8.0/App.Domain.AssemblyInfo.cs
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Domain/obj/Debug/net8.0/App.Domain.csproj.CoreCompileInputs.cache
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Domain/obj/Debug/net8.0/App.Domain.sourcelink.json
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Domain/obj/Debug/net8.0/App.Domain.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Domain/obj/Debug/net8.0/refint/App.Domain.dll
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Domain/obj/Debug/net8.0/App.Domain.pdb
+/home/oem/Desktop/Recep/Programlama/Notlar/Net Core/Fatih Cakiroglu/Net Core 8 Api-Web/CleanArchitectureBestPractice/App.Domain/obj/Debug/net8.0/ref/App.Domain.dll
